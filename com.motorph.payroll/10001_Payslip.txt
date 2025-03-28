@@ -1,0 +1,10 @@
+Payslip for Manuel III Garcia
+===================================
+Employee ID: 10001
+Position: Full-Time
+Basic Salary: ₱1,500.00
+Overtime Pay: ₱150.00
+Allowances: ₱2,000
+Deductions: ₱75.00
+Net Pay: ₱1,575.00
+===================================
