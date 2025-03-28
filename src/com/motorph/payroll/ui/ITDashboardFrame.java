@@ -5,20 +5,18 @@
 package com.motorph.payroll.ui;
 
 import javax.swing.*;
+import com.motorph.payroll.util.LogWriter;
 
-/**
- *
- * @author samleonor
- */
 public class ITDashboardFrame extends javax.swing.JFrame {
-    private javax.swing.JLabel lblITName;
 
+    private String itName;
 
     public ITDashboardFrame(String itName) {
+        this.itName = itName;
         initComponents();
         setLocationRelativeTo(null);
-        jLabel3.setText(itName); // ✅ Use the existing generated label
-}
+        jLabel3.setText(itName); // Display name
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -45,10 +43,25 @@ public class ITDashboardFrame extends javax.swing.JFrame {
         jLabel3.setText("jLabel3");
 
         btnManageLogins.setText("Manage Logins");
+        btnManageLogins.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnManageLoginsActionPerformed(evt);
+            }
+        });
 
         btnSystemAudit.setText("View System Logs");
+        btnSystemAudit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSystemAuditActionPerformed(evt);
+            }
+        });
 
         btnLogout.setText("Logout");
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,6 +104,22 @@ public class ITDashboardFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnManageLoginsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageLoginsActionPerformed
+        new ManageLoginsFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnManageLoginsActionPerformed
+
+    private void btnSystemAuditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSystemAuditActionPerformed
+        new SystemLogsFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSystemAuditActionPerformed
+
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
+        LogWriter.log("🚪 Logout | Role: IT | Name: " + itName);
+        dispose();
+        new LoginFrame().setVisible(true);
+    }//GEN-LAST:event_btnLogoutActionPerformed
 
     /**
      * @param args the command line arguments

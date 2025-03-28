@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.awt.print.PrinterException;
+import com.motorph.payroll.util.LogWriter;
 
 
 
@@ -381,7 +382,9 @@ public class PayslipFrame extends javax.swing.JFrame {
 
         // Update period label with friendly formatting
         java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("MMM dd, yyyy");
-        lblPeriodLabel.setText("Payslip Period: " + sdf.format(start) + " to " + sdf.format(end));
+        String startStr = sdf.format(start);
+        String endStr = sdf.format(end);
+        lblPeriodLabel.setText("Payslip Period: " + startStr + " to " + endStr);
 
         // Recalculate pay based on attendance
         double hourlyRate = employee.getSalary() / 160.0;
@@ -403,6 +406,11 @@ public class PayslipFrame extends javax.swing.JFrame {
         lblAllowancesLabel.setText("₱" + String.format("%,.2f", allowances));
         lblDeductionsLabel.setText("₱" + String.format("%,.2f", deductions));
         lblNetPayLabel.setText("₱" + String.format("%,.2f", netPay));
+
+        // ✅ Logging
+        LogWriter.log("🧾 Payslip generated for: " + employee.getFirstName() + " " + employee.getLastName() +
+                      " | ID: " + employee.getEmployeeId() +
+                      " | Period: " + startStr + " to " + endStr);
     }//GEN-LAST:event_btnGeneratePayslipActionPerformed
 
     private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed

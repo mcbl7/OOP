@@ -9,15 +9,24 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import com.motorph.payroll.util.LogWriter;
 
 public class ManageLoginsFrame extends javax.swing.JFrame {
 
     private static final String FILE_PATH = "/Users/samleonor/Desktop/com.motorph.payroll/Accounts.csv";
 
+    // Manually declared variables
+    private JTable tblAccounts;
+    private DefaultTableModel tableModel;
+
     public ManageLoginsFrame() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Manage Login Credentials");
+
+        tableModel = (DefaultTableModel) jTable1.getModel();
+        tblAccounts = jTable1;
+
         loadAccountsFromFile();
         addListeners();
     }
@@ -58,52 +67,57 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
     }
 
     private void addLogin() {
-        String id = txtEmpID.getText().trim();
-        String pass = new String(txtPassword.getPassword()).trim();
+    String id = txtEmpID.getText().trim();
+    String pass = new String(txtPassword.getPassword()).trim();
 
-        if (id.isEmpty() || pass.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Please enter both ID and Password.", "Warning", JOptionPane.WARNING_MESSAGE);
+    if (id.isEmpty() || pass.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Please enter both ID and Password.", "Warning", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+
+    for (int i = 0; i < tableModel.getRowCount(); i++) {
+        if (tableModel.getValueAt(i, 0).toString().equalsIgnoreCase(id)) {
+            JOptionPane.showMessageDialog(this, "Employee ID already exists.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
-        for (int i = 0; i < tableModel.getRowCount(); i++) {
-            if (tableModel.getValueAt(i, 0).toString().equalsIgnoreCase(id)) {
-                JOptionPane.showMessageDialog(this, "Employee ID already exists.", "Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-        }
-
-        tableModel.addRow(new Object[]{id, pass});
-        saveAccountsToFile();
-        txtEmpID.setText("");
-        txtPassword.setText("");
     }
+
+    tableModel.addRow(new Object[]{id, pass});
+    saveAccountsToFile();
+    LogWriter.log("➕ Added login for Employee ID: " + id);
+    txtEmpID.setText("");
+    txtPassword.setText("");
+}
 
     private void editPassword() {
         int selectedRow = tblAccounts.getSelectedRow();
-        if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "Please select a row to edit.", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        String newPass = new String(txtPassword.getPassword()).trim();
-        if (newPass.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Enter new password.", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        tableModel.setValueAt(newPass, selectedRow, 1);
-        saveAccountsToFile();
-        txtPassword.setText("");
+    if (selectedRow == -1) {
+        JOptionPane.showMessageDialog(this, "Please select a row to edit.", "Warning", JOptionPane.WARNING_MESSAGE);
+        return;
     }
+    String newPass = new String(txtPassword.getPassword()).trim();
+    if (newPass.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Enter new password.", "Warning", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+    String empId = tableModel.getValueAt(selectedRow, 0).toString();
+    tableModel.setValueAt(newPass, selectedRow, 1);
+    saveAccountsToFile();
+    LogWriter.log("✏️ Edited password for Employee ID: " + empId);
+    txtPassword.setText("");
+}
 
     private void deleteSelected() {
         int selectedRow = tblAccounts.getSelectedRow();
-        if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "Select a row to delete.", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        tableModel.removeRow(selectedRow);
-        saveAccountsToFile();
+    if (selectedRow == -1) {
+        JOptionPane.showMessageDialog(this, "Select a row to delete.", "Warning", JOptionPane.WARNING_MESSAGE);
+        return;
     }
+    String deletedId = tableModel.getValueAt(selectedRow, 0).toString();
+    tableModel.removeRow(selectedRow);
+    saveAccountsToFile();
+    LogWriter.log("❌ Deleted login for Employee ID: " + deletedId);
+}
 
     
     @SuppressWarnings("unchecked")

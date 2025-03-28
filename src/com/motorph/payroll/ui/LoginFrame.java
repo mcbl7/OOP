@@ -7,6 +7,7 @@ package com.motorph.payroll.ui;
 import javax.swing.JOptionPane;
 import java.util.Map;
 import com.motorph.payroll.data.LoginRepository;
+import com.motorph.payroll.util.LogWriter;
 
 /**
  *
@@ -112,6 +113,7 @@ public class LoginFrame extends javax.swing.JFrame {
             String role = details[1].toLowerCase();
 
             JOptionPane.showMessageDialog(this, "Login Successful as " + role + "!", "Success", JOptionPane.INFORMATION_MESSAGE);
+            LogWriter.log("✅ Login success | Role: " + role + " | Name: " + name);
 
             switch (role) {
                 case "hr":
@@ -130,6 +132,7 @@ public class LoginFrame extends javax.swing.JFrame {
             dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Invalid Employee ID or Password", "Login Failed", JOptionPane.ERROR_MESSAGE);
+            LogWriter.log("❌ Login failed for ID: " + employeeID);
         }
     }//GEN-LAST:event_btnLoginActionPerformed
         

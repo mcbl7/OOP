@@ -7,6 +7,7 @@ import com.motorph.payroll.payroll.PayrollProcessor;
 import com.motorph.payroll.attendance.AttendanceManager;
 import com.motorph.payroll.attendance.AttendanceRepository;
 import com.motorph.payroll.data.EmployeeRepository;
+import com.motorph.payroll.util.LogWriter;
 
 import javax.swing.*;
 import java.io.BufferedReader;
@@ -19,6 +20,7 @@ import java.util.List;
 
 public class DashboardFrame extends javax.swing.JFrame {
     
+    private String employeeName;
     private Employee user;
     private PayrollProcessor payrollProcessor;
     private static final String FILE_PATH = "/Users/samleonor/Desktop/com.motorph.payroll/Employee Data.csv";
@@ -180,12 +182,14 @@ public class DashboardFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_openPayrollButtonActionPerformed
 
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
-        int confirm = JOptionPane.showConfirmDialog(this,
-            "Are you sure you want to logout?",
-            "Logout Confirmation",
-            JOptionPane.YES_NO_OPTION);
+    int confirm = JOptionPane.showConfirmDialog(this,
+        "Are you sure you want to logout?",
+        "Logout Confirmation",
+        JOptionPane.YES_NO_OPTION);
 
     if (confirm == JOptionPane.YES_OPTION) {
+        String fullName = user.getFirstName() + " " + user.getLastName();
+        LogWriter.log("🚪 Logout | Role: Employee | Name: " + fullName);
         this.dispose(); 
         new LoginFrame().setVisible(true); 
     }

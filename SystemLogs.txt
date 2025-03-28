@@ -1,0 +1,5 @@
+2025-03-29 01:36:31 - ➕ Added login for Employee ID: samleonor
+2025-03-29 01:36:41 - ❌ Deleted login for Employee ID: samleonor
+2025-03-29 03:22:41 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 29, 2025 to Mar 29, 2025
+2025-03-29 03:24:29 - ✅ Login success | Role: employee | Name: 10008
+2025-03-29 03:24:34 - 🧾 Payslip generated for: Alice Romualdez | ID: 10008 | Period: Mar 29, 2025 to Mar 29, 2025

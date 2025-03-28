@@ -5,17 +5,23 @@
 package com.motorph.payroll.ui;
 
 import javax.swing.*;
+import com.motorph.payroll.util.LogWriter;
+
 /**
  *
  * @author samleonor
  */
 public class AdminDashboardFrame extends javax.swing.JFrame {
     
+    private String adminName;
+
+    
 
     public AdminDashboardFrame(String adminName) {
         initComponents();
         setLocationRelativeTo(null);
         lblAdminName.setText(adminName);
+        this.adminName = adminName;
     }
 
 
@@ -51,6 +57,11 @@ public class AdminDashboardFrame extends javax.swing.JFrame {
         btnPayslip.setText("View Payslip");
 
         btnLogout.setText("Logout");
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,6 +105,12 @@ public class AdminDashboardFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
+        LogWriter.log("🚪 Logout | Role: Admin | Name: " + adminName);
+        dispose();
+        new LoginFrame().setVisible(true);
+    }//GEN-LAST:event_btnLogoutActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> new AdminDashboardFrame("Admin Sample").setVisible(true));
