@@ -13,23 +13,26 @@ import java.io.*;
  * @author samleonor
  */
 public class SystemLogsFrame extends JFrame {
-
+    
+    private ITDashboardFrame itDashboard;
     private static final String LOGS_FILE_PATH = "/Users/samleonor/Desktop/com.motorph.payroll/SystemLogs.txt";
 
-    public SystemLogsFrame() {
+    public SystemLogsFrame(ITDashboardFrame dashboard) {
+        this.itDashboard = dashboard;
         initComponents();
         setLocationRelativeTo(null);
         setTitle("System Logs");
 
-        // Set font for title label
         jLabel1.setFont(new Font("Arial", Font.BOLD, 18));
-        
-        // Set scrollable text area read-only
         txtLogs.setEditable(false);
 
-        // Action listeners
         btnRefresh.addActionListener(e -> loadLogs());
-        btnClose.addActionListener(e -> dispose());
+        btnClose.addActionListener(e -> {
+            this.dispose();
+            if (itDashboard != null) {
+                itDashboard.setVisible(true);
+            }
+        });
 
         loadLogs();
     }
@@ -71,6 +74,11 @@ public class SystemLogsFrame extends JFrame {
         btnRefresh.setText("Refresh");
 
         btnClose.setText("Close");
+        btnClose.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCloseActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,9 +113,16 @@ public class SystemLogsFrame extends JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCloseActionPerformed
+
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new SystemLogsFrame().setVisible(true));
-    }
+    SwingUtilities.invokeLater(() -> {
+        ITDashboardFrame dummyDashboard = new ITDashboardFrame("IT Tester");
+        new SystemLogsFrame(dummyDashboard).setVisible(true);
+    });
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;

@@ -14,12 +14,16 @@ import java.io.IOException;
  * @author samleonor
  */
 public class AddEmployee extends javax.swing.JFrame {
+    
+    private HRDashboardFrame parentDashboard;
 
     /**
      * Creates new form AddEmployee
      */
-    public AddEmployee() {
+    public AddEmployee(HRDashboardFrame parentDashboard) {
+        this.parentDashboard = parentDashboard;
         initComponents();
+        setLocationRelativeTo(null);
     }
 
         
@@ -121,6 +125,11 @@ public class AddEmployee extends javax.swing.JFrame {
         });
 
         backbtn.setText("Back");
+        backbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -172,7 +181,6 @@ public class AddEmployee extends javax.swing.JFrame {
                                 .addGap(38, 38, 38)
                                 .addComponent(backbtn)
                                 .addGap(59, 59, 59)))
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(stf, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
                             .addComponent(ptf)
@@ -292,40 +300,22 @@ JOptionPane.showMessageDialog(this, "Employee successfully added!", "Success", J
 
     }//GEN-LAST:event_addbtnActionPerformed
 
+    private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
+        if (parentDashboard != null) {
+            parentDashboard.setVisible(true);
+        }
+        this.dispose();
+    }//GEN-LAST:event_backbtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new AddEmployee().setVisible(true);
-            }
-        });
-    }
+    java.awt.EventQueue.invokeLater(() -> {
+        HRDashboardFrame dummyParent = new HRDashboardFrame("Sample HR");
+        new AddEmployee(dummyParent).setVisible(true);
+    });
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addbtn;
@@ -369,16 +359,16 @@ JOptionPane.showMessageDialog(this, "Employee successfully added!", "Success", J
     private javax.swing.JTextField stf;
     private javax.swing.JTextField tintf;
     // End of variables declaration//GEN-END:variables
-// Custom Methods - Place Below Auto-Generated Code
+
 private boolean isEmployeeExists(String empNum) {
-    String filePath = "src/MainPackage/Employee Data.csv"; // Correct file path
+    String filePath = "src/MainPackage/Employee Data.csv"; 
 
     try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
         String line;
         while ((line = br.readLine()) != null) {
             String[] values = line.split(",");
             if (values.length > 0 && values[0].trim().equals(empNum)) {
-                return true; // Employee already exists
+                return true; 
             }
         }
     } catch (IOException e) {

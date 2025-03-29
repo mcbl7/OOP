@@ -36,9 +36,8 @@ public class PayslipFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
 
-        initComponents(); // must be inside the constructor!
+        initComponents();
 
-        // ✅ Configure spinners after components are initialized
         startDateSpinner.setModel(new javax.swing.SpinnerDateModel());
         endDateSpinner.setModel(new javax.swing.SpinnerDateModel());
 
@@ -134,13 +133,13 @@ public class PayslipFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 FullTimeEmployee testEmployee = new FullTimeEmployee(
-    "10001",           // ID
-    "Manuel III",      // First Name
-    "Garcia",          // Last Name
-    "10/11/1983",      // ✅ Birthdate (Added)
-    "Makati City",     // Address
-    "966-860-270",     // Phone
-    90000              // Salary
+    "10001",
+    "Manuel III",
+    "Garcia",
+    "10/11/1983",
+    "Makati City",
+    "966-860-270",
+    90000
 );
 
                 new PayslipFrame(testEmployee).setVisible(true);
@@ -247,33 +246,16 @@ public class PayslipFrame extends javax.swing.JFrame {
             }
         });
 
-        lblPeriodLabel.setText("jLabel3");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(194, 194, 194)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel1))
-                    .addComponent(startDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(38, 38, 38))
-                            .addComponent(endDateSpinner, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(150, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(lblTitle)
-                        .addGap(252, 252, 252))
+                        .addGap(241, 241, 241))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -306,18 +288,30 @@ public class PayslipFrame extends javax.swing.JFrame {
                                 .addComponent(btnClose)))
                         .addGap(144, 144, 144))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnGeneratePayslip)
-                        .addGap(245, 245, 245))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(lblPeriodLabel)
-                        .addGap(283, 283, 283))))
+                        .addGap(283, 283, 283))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnGeneratePayslip)
+                        .addGap(237, 237, 237))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(194, 194, 194)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2))
+                    .addComponent(startDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(endDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(35, 35, 35)
                 .addComponent(lblTitle)
-                .addGap(45, 45, 45)
+                .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
@@ -329,7 +323,7 @@ public class PayslipFrame extends javax.swing.JFrame {
                 .addComponent(lblPeriodLabel)
                 .addGap(18, 18, 18)
                 .addComponent(btnGeneratePayslip)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEmployeeName)
                     .addComponent(lblNameLabel))
@@ -374,19 +368,18 @@ public class PayslipFrame extends javax.swing.JFrame {
 
     private void btnExportPayslipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExportPayslipActionPerformed
         exportPayslip();
+        LogWriter.log("📤 Payslip exported for: " + employee.getFirstName() + " " + employee.getLastName());
     }//GEN-LAST:event_btnExportPayslipActionPerformed
 
     private void btnGeneratePayslipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGeneratePayslipActionPerformed
         Date start = (Date) startDateSpinner.getValue();
         Date end = (Date) endDateSpinner.getValue();
 
-        // Update period label with friendly formatting
         java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("MMM dd, yyyy");
         String startStr = sdf.format(start);
         String endStr = sdf.format(end);
         lblPeriodLabel.setText("Payslip Period: " + startStr + " to " + endStr);
 
-        // Recalculate pay based on attendance
         double hourlyRate = employee.getSalary() / 160.0;
         double overtimeHours = attendanceManager.getOvertimeHours(employee.getEmployeeId(), start, end);
         double overtimePay = overtimeHours * hourlyRate;
@@ -397,7 +390,6 @@ public class PayslipFrame extends javax.swing.JFrame {
         double grossPay = baseSalary + overtimePay + allowances;
         double netPay = grossPay - deductions;
 
-        // Update labels
         lblNameLabel.setText(employee.getFirstName() + " " + employee.getLastName());
         lblEmployeeIDLabel.setText(employee.getEmployeeId());
         lblPositionLabel.setText(employee instanceof FullTimeEmployee ? "Full-Time" : "Part-Time");
@@ -407,7 +399,6 @@ public class PayslipFrame extends javax.swing.JFrame {
         lblDeductionsLabel.setText("₱" + String.format("%,.2f", deductions));
         lblNetPayLabel.setText("₱" + String.format("%,.2f", netPay));
 
-        // ✅ Logging
         LogWriter.log("🧾 Payslip generated for: " + employee.getFirstName() + " " + employee.getLastName() +
                       " | ID: " + employee.getEmployeeId() +
                       " | Period: " + startStr + " to " + endStr);
@@ -418,7 +409,8 @@ public class PayslipFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPrintActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        this.dispose();
+        new DashboardFrame(employee.getEmployeeId()).setVisible(true); 
+        dispose();
     }//GEN-LAST:event_btnCloseActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

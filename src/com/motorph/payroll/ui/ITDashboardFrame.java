@@ -6,16 +6,20 @@ package com.motorph.payroll.ui;
 
 import javax.swing.*;
 import com.motorph.payroll.util.LogWriter;
+import com.motorph.payroll.ui.SystemLogsFrame;
+
 
 public class ITDashboardFrame extends javax.swing.JFrame {
 
     private String itName;
+    private javax.swing.JButton viewLogsButton;
+
 
     public ITDashboardFrame(String itName) {
         this.itName = itName;
         initComponents();
         setLocationRelativeTo(null);
-        jLabel3.setText(itName); // Display name
+        jLabel3.setText(itName); // If you display their name somewhere
     }
 
     /**
@@ -39,8 +43,6 @@ public class ITDashboardFrame extends javax.swing.JFrame {
         jLabel1.setText("MotorPH IT Dashboard");
 
         jLabel2.setText("Welcome,");
-
-        jLabel3.setText("jLabel3");
 
         btnManageLogins.setText("Manage Logins");
         btnManageLogins.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +98,7 @@ public class ITDashboardFrame extends javax.swing.JFrame {
                 .addGap(69, 69, 69)
                 .addComponent(btnManageLogins)
                 .addGap(18, 18, 18)
-                .addComponent(btnSystemAudit)
+                .addComponent(btnSystemAudit, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnLogout)
                 .addContainerGap(87, Short.MAX_VALUE))
@@ -106,13 +108,15 @@ public class ITDashboardFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageLoginsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageLoginsActionPerformed
-        new ManageLoginsFrame().setVisible(true);
+        ManageLoginsFrame manageLoginsFrame = new ManageLoginsFrame(itName);
+        manageLoginsFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnManageLoginsActionPerformed
 
     private void btnSystemAuditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSystemAuditActionPerformed
-        new SystemLogsFrame().setVisible(true);
-        this.dispose();
+        LogWriter.log("📖 System Logs viewed by: " + itName); // Logging the action
+        new SystemLogsFrame(this).setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnSystemAuditActionPerformed
 
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed

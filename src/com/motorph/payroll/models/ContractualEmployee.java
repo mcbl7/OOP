@@ -17,6 +17,6 @@ public class ContractualEmployee extends Employee {
 
     @Override
     public double getDeductions() {
-        return 0; // You can update this logic later if needed
+        return 0; 
     }
 }

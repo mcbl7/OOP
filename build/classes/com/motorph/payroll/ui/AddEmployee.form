@@ -77,7 +77,6 @@
                               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="stf" alignment="0" pref="102" max="32767" attributes="0"/>
                           <Component id="ptf" alignment="0" max="32767" attributes="0"/>
@@ -358,6 +357,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Back"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

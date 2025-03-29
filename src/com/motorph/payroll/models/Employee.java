@@ -32,7 +32,6 @@ public abstract class Employee {
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
     public void setPosition(String position) { this.position = position; }
 
-    // ✅ Must be implemented by subclasses
     public abstract double getDeductions();
     public abstract String generatePayslip();
 }

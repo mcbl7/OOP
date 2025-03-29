@@ -60,7 +60,7 @@
               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
               <Component id="btnManageLogins" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnSystemAudit" min="-2" max="-2" attributes="0"/>
+              <Component id="btnSystemAudit" min="-2" pref="23" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="87" max="32767" attributes="0"/>
@@ -80,9 +80,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnManageLogins">
       <Properties>

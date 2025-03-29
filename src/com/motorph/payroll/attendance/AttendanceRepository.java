@@ -4,6 +4,8 @@
  */
 package com.motorph.payroll.attendance;
 
+import com.motorph.payroll.util.LogWriter;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.text.SimpleDateFormat;
@@ -22,6 +24,9 @@ public class AttendanceRepository {
         try (BufferedReader br = new BufferedReader(new FileReader(FILE_PATH))) {
             String line;
             boolean isFirstLine = true;
+            int count = 0;
+
+            LogWriter.log("📂 Loading attendance records from: " + FILE_PATH);
 
             while ((line = br.readLine()) != null) {
                 if (isFirstLine) {
@@ -39,9 +44,14 @@ public class AttendanceRepository {
 
                     AttendanceRecord record = new AttendanceRecord(employeeId, date, timeIn, timeOut);
                     manager.addRecord(record);
+                    count++;
                 }
             }
+
+            LogWriter.log("✅ Successfully loaded " + count + " attendance record(s).");
+
         } catch (Exception e) {
+            LogWriter.log("⛔ Error loading attendance file: " + e.getMessage());
             e.printStackTrace();
         }
     }

@@ -8,7 +8,7 @@ public class IT extends Employee {
 
     @Override
     public double getDeductions() {
-        return getSalary() * 0.07; // Example: IT employees have 7% deductions
+        return getSalary() * 0.07; 
     }
 
     @Override

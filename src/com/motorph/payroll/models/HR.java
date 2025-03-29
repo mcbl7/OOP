@@ -8,7 +8,7 @@ public class HR extends Employee {
 
     @Override
     public double getDeductions() {
-        return getSalary() * 0.10; // Example: HR employees have 10% deductions
+        return getSalary() * 0.10; 
     }
 
     @Override

@@ -5,23 +5,20 @@ import java.io.*;
 
 public class EditEmployee extends javax.swing.JFrame {
     
-    private EmployeeInformation parentFrame;
+    private HRDashboardFrame parentFrame;
     private String oldEmpNum;
 
+
    
-    public EditEmployee(EmployeeInformation parent, String empNum, String lastName, String firstName, String position) {
+    public EditEmployee(HRDashboardFrame parent, String empNum, String lastName, String firstName, String position) {
         this.parentFrame = parent;
         this.oldEmpNum = empNum;
-        
         initComponents();
-        
-       
         empNumField.setText(empNum);
         lastNameField.setText(lastName);
         firstNameField.setText(firstName);
         positionField.setText(position);
-       
-    }
+}
     
     private void saveChanges() {
         String newEmpNum = empNumField.getText();
@@ -74,6 +71,11 @@ public class EditEmployee extends javax.swing.JFrame {
         });
 
         cancelButton.setText("Cancel");
+        cancelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -158,16 +160,23 @@ public class EditEmployee extends javax.swing.JFrame {
         
         parentFrame.updateEmployeeInCSV(oldEmpNum, newEmpNum, newLastName, newFirstName, newPosition);
         JOptionPane.showMessageDialog(this, "Employee updated successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
-        dispose();// TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
+        this.dispose();
+        if (parentFrame != null) {
+            parentFrame.setVisible(true); // ✅ Go back to HR Dashboard
+        }
+    }//GEN-LAST:event_cancelButtonActionPerformed
 
     
     public static void main(String args[]) {
-    SwingUtilities.invokeLater(() -> {
-        EmployeeInformation dummyParent = new EmployeeInformation(); // Creates a dummy parent
-        new EmployeeInformation().setVisible(true);
-    });
-}
+        SwingUtilities.invokeLater(() -> {
+            HRDashboardFrame dashboard = new HRDashboardFrame("Test HR");
+            new EmployeeInformation(dashboard).setVisible(true);
+        });
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

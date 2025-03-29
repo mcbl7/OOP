@@ -18,8 +18,11 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
     // Manually declared variables
     private JTable tblAccounts;
     private DefaultTableModel tableModel;
+    private String itName;
 
-    public ManageLoginsFrame() {
+
+    public ManageLoginsFrame(String itName) {
+        this.itName = itName;
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Manage Login Credentials");
@@ -135,6 +138,7 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         btnDeleteSelected = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -144,9 +148,11 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
 
         lblPassword.setText("Password:");
 
-        txtEmpID.setText("jTextField1");
-
-        txtPassword.setText("jPasswordField1");
+        txtEmpID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEmpIDActionPerformed(evt);
+            }
+        });
 
         btnAdd.setText("Add Login");
 
@@ -169,18 +175,28 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
 
         btnDeleteSelected.setText("Delete Selected");
 
+        jButton1.setText("X");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(scrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(160, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblTitle)
                         .addGap(220, 220, 220))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 154, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblEmpID)
@@ -204,8 +220,13 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(lblTitle)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(lblTitle))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1)))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEmpID)
@@ -228,8 +249,17 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+             new ITDashboardFrame(itName).setVisible(true);
+             this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtEmpIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmpIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEmpIDActionPerformed
+
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new ManageLoginsFrame().setVisible(true));
+        SwingUtilities.invokeLater(() -> new ManageLoginsFrame("IT").setVisible(true));
     }
 
     
@@ -237,6 +267,7 @@ public class ManageLoginsFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnDeleteSelected;
     private javax.swing.JButton btnEdit;
+    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblEmpID;

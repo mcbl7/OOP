@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
+import com.motorph.payroll.util.LogWriter;
 
 public class LoginRepository {
     private static final String FILE_PATH = "/Users/samleonor/Desktop/com.motorph.payroll/Accounts.csv";
@@ -27,7 +28,9 @@ public class LoginRepository {
                     credentials.put(employeeId, password);
                 }
             }
+            LogWriter.log("🔐 Credentials loaded from Accounts.csv");
         } catch (Exception e) {
+            LogWriter.log("⛔ Failed to load credentials: " + e.getMessage());
             System.err.println("⚠️ Error loading credentials from Accounts.csv:");
             e.printStackTrace();
         }
@@ -47,7 +50,9 @@ public class LoginRepository {
                     roles.put(empId, role);
                 }
             }
+            LogWriter.log("📜 Roles loaded from ListOfAdmins.csv");
         } catch (Exception e) {
+            LogWriter.log("⛔ Failed to load roles: " + e.getMessage());
             System.err.println("⚠️ Error loading roles from ListOfAdmins.csv:");
             e.printStackTrace();
         }
@@ -74,7 +79,9 @@ public class LoginRepository {
                     userDetailsMap.put(empId, new String[]{name, role});
                 }
             }
+            LogWriter.log("👥 User details loaded from ListOfAdmins.csv");
         } catch (Exception e) {
+            LogWriter.log("⛔ Failed to load user details: " + e.getMessage());
             System.err.println("⚠️ Error loading user details from ListOfAdmins.csv:");
             e.printStackTrace();
         }

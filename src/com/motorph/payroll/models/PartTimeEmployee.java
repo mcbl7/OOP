@@ -7,7 +7,7 @@ public class PartTimeEmployee extends Employee {
 
     @Override
     public double getDeductions() {
-        return getSalary() * 0.05; // Example: 5% deduction for part-time employees
+        return getSalary() * 0.05; 
     }
 
     @Override

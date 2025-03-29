@@ -1,0 +1,10 @@
+Payslip for Alice Romualdez
+===================================
+Employee ID: 10008
+Position: Full-Time
+Basic Salary: ₱22,500.00
+Overtime Pay: ₱0.00
+Allowances: ₱2,000
+Deductions: ₱2,250.00
+Net Pay: ₱-2,250.00
+===================================
