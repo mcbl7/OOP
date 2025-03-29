@@ -37,6 +37,7 @@ public class PayslipFrame extends javax.swing.JFrame {
         setResizable(false);
 
         initComponents();
+        setSize(800, 600);
 
         startDateSpinner.setModel(new javax.swing.SpinnerDateModel());
         endDateSpinner.setModel(new javax.swing.SpinnerDateModel());
@@ -151,7 +152,10 @@ public class PayslipFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitle = new javax.swing.JLabel();
+        panel1 = new java.awt.Panel();
+        jLabel3 = new javax.swing.JLabel();
+        panel2 = new java.awt.Panel();
+        jLabel4 = new javax.swing.JLabel();
         lblEmployeeName = new javax.swing.JLabel();
         lblEmployeeID = new javax.swing.JLabel();
         lblPosition = new javax.swing.JLabel();
@@ -177,10 +181,65 @@ public class PayslipFrame extends javax.swing.JFrame {
         startDateSpinner = new javax.swing.JSpinner();
         endDateSpinner = new javax.swing.JSpinner();
         lblPeriodLabel = new javax.swing.JLabel();
+        panel3 = new java.awt.Panel();
+
+        panel1.setBackground(new java.awt.Color(0, 51, 153));
+
+        jLabel3.setFont(new java.awt.Font("Charter", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Payroll Calculator");
+
+        panel2.setBackground(new java.awt.Color(0, 51, 153));
+
+        jLabel4.setFont(new java.awt.Font("Charter", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Payroll Calculator");
+
+        javax.swing.GroupLayout panel2Layout = new javax.swing.GroupLayout(panel2);
+        panel2.setLayout(panel2Layout);
+        panel2Layout.setHorizontalGroup(
+            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel2Layout.setVerticalGroup(
+            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
+        panel1.setLayout(panel1Layout);
+        panel1Layout.setHorizontalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+        panel1Layout.setVerticalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        lblTitle.setText("Employee Payslip");
 
         lblEmployeeName.setText("Name:");
 
@@ -246,72 +305,87 @@ public class PayslipFrame extends javax.swing.JFrame {
             }
         });
 
+        panel3.setBackground(new java.awt.Color(0, 51, 153));
+
+        javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
+        panel3.setLayout(panel3Layout);
+        panel3Layout.setHorizontalGroup(
+            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panel3Layout.setVerticalGroup(
+            panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 33, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(240, 240, 240)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(startDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(40, 40, 40)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(endDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(btnGeneratePayslip, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(150, Short.MAX_VALUE)
+                .addContainerGap(216, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblTitle)
-                        .addGap(241, 241, 241))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblEmployeeID)
-                                    .addComponent(lblEmployeeName)
-                                    .addComponent(lblPosition)
-                                    .addComponent(lblBasicSalary)
-                                    .addComponent(lblOvertimePay)
-                                    .addComponent(lblAllowances)
-                                    .addComponent(lblDeductions)
-                                    .addComponent(lblNetPay))
-                                .addGap(115, 115, 115)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblNameLabel)
-                                    .addComponent(lblEmployeeIDLabel)
-                                    .addComponent(lblPositionLabel)
-                                    .addComponent(lblBasicSalaryLabel)
-                                    .addComponent(lblOvertimePayLabel)
-                                    .addComponent(lblAllowancesLabel)
-                                    .addComponent(lblDeductionsLabel)
-                                    .addComponent(lblNetPayLabel))
-                                .addGap(55, 55, 55))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnPrint)
-                                .addGap(34, 34, 34)
-                                .addComponent(btnExportPayslip)
-                                .addGap(38, 38, 38)
-                                .addComponent(btnClose)))
-                        .addGap(144, 144, 144))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(lblPeriodLabel)
                         .addGap(283, 283, 283))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnGeneratePayslip)
-                        .addGap(237, 237, 237))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(194, 194, 194)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2))
-                    .addComponent(startDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(endDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnPrint, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnExportPayslip)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblEmployeeID, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblEmployeeName, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblPosition, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblBasicSalary, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblOvertimePay, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblAllowances, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblDeductions, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblNetPay, javax.swing.GroupLayout.Alignment.TRAILING))
+                                        .addGap(159, 159, 159))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblNameLabel)
+                                        .addComponent(lblEmployeeIDLabel)
+                                        .addComponent(lblPositionLabel)
+                                        .addComponent(lblBasicSalaryLabel)
+                                        .addComponent(lblOvertimePayLabel)
+                                        .addComponent(lblAllowancesLabel)
+                                        .addComponent(lblDeductionsLabel)
+                                        .addComponent(lblNetPayLabel)))
+                                .addGap(68, 68, 68)))
+                        .addGap(202, 202, 202))))
+            .addComponent(panel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(lblTitle)
-                .addGap(46, 46, 46)
+                .addComponent(panel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
@@ -319,11 +393,11 @@ public class PayslipFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(startDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(endDateSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addComponent(lblPeriodLabel)
-                .addGap(18, 18, 18)
+                .addGap(32, 32, 32)
                 .addComponent(btnGeneratePayslip)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(lblPeriodLabel)
+                .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEmployeeName)
                     .addComponent(lblNameLabel))
@@ -355,12 +429,12 @@ public class PayslipFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNetPay)
                     .addComponent(lblNetPayLabel))
-                .addGap(37, 37, 37)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnPrint)
+                    .addComponent(btnClose)
                     .addComponent(btnExportPayslip)
-                    .addComponent(btnClose))
-                .addGap(34, 34, 34))
+                    .addComponent(btnPrint))
+                .addGap(47, 47, 47))
         );
 
         pack();
@@ -378,7 +452,6 @@ public class PayslipFrame extends javax.swing.JFrame {
         java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("MMM dd, yyyy");
         String startStr = sdf.format(start);
         String endStr = sdf.format(end);
-        lblPeriodLabel.setText("Payslip Period: " + startStr + " to " + endStr);
 
         double hourlyRate = employee.getSalary() / 160.0;
         double overtimeHours = attendanceManager.getOvertimeHours(employee.getEmployeeId(), start, end);
@@ -421,6 +494,8 @@ public class PayslipFrame extends javax.swing.JFrame {
     private javax.swing.JSpinner endDateSpinner;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblAllowances;
     private javax.swing.JLabel lblAllowancesLabel;
     private javax.swing.JLabel lblBasicSalary;
@@ -438,7 +513,9 @@ public class PayslipFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblPeriodLabel;
     private javax.swing.JLabel lblPosition;
     private javax.swing.JLabel lblPositionLabel;
-    private javax.swing.JLabel lblTitle;
+    private java.awt.Panel panel1;
+    private java.awt.Panel panel2;
+    private java.awt.Panel panel3;
     private javax.swing.JSpinner startDateSpinner;
     // End of variables declaration//GEN-END:variables
 }

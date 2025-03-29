@@ -397,3 +397,276 @@
 2025-03-30 02:17:34 - 👥 User details loaded from ListOfAdmins.csv
 2025-03-30 02:17:35 - ✅ Login success | Role: it | Name: Sam Leonor
 2025-03-30 02:18:09 - 📖 System Logs viewed by: Sam Leonor
+2025-03-30 02:37:32 - 👀 Payslip viewed by: Manuel III Garcia
+2025-03-30 03:15:04 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:15:04 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:15:05 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:15:38 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:15:38 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:15:38 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:15:40 - 🚪 Logout | Role: IT | Name: Sam Leonor
+2025-03-30 03:15:46 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:15:46 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:15:47 - ✅ Login success | Role: hr | Name: Sam Leonor
+2025-03-30 03:16:28 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:16:28 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:16:29 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:21:13 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:21:13 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:21:14 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:26:52 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:26:52 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:26:53 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:26:54 - 🚪 Logout | Role: IT | Name: Sam Leonor
+2025-03-30 03:27:00 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:27:00 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:27:01 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:34:00 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:34:00 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:34:01 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 03:34:02 - 📖 System Logs viewed by: Sam Leonor
+2025-03-30 03:34:06 - 📖 System Logs viewed by: Sam Leonor
+2025-03-30 03:34:12 - 🚪 Logout | Role: IT | Name: Sam Leonor
+2025-03-30 03:34:17 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 03:34:17 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 03:34:18 - ✅ Login success | Role: hr | Name: Sam Leonor
+2025-03-30 04:03:33 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:03:33 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:03:34 - ✅ Login success | Role: employee | Name: 10008
+2025-03-30 04:03:40 - 👀 Payslip viewed by: Alice Romualdez
+2025-03-30 04:03:45 - 🧾 Payslip generated for: Alice Romualdez | ID: 10008 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:03:46 - 🧾 Payslip generated for: Alice Romualdez | ID: 10008 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:04:03 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:04:03 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:04:04 - ✅ Login success | Role: employee | Name: 10005
+2025-03-30 04:04:20 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:04:20 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:04:20 - ✅ Login success | Role: employee | Name: 10004
+2025-03-30 04:04:22 - 👀 Payslip viewed by: Isabella Reyes
+2025-03-30 04:04:28 - 🧾 Payslip generated for: Isabella Reyes | ID: 10004 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:04:30 - 🧾 Payslip generated for: Isabella Reyes | ID: 10004 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:05:26 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:06:37 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:06:42 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:08:24 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:09:04 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:10:44 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:10:53 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:11:02 - 📤 Payslip exported for: Manuel III Garcia
+2025-03-30 04:12:16 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:12:56 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:13:57 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:14:32 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:14:46 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:15:16 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:15:17 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:16:11 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:16:13 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:16:15 - 📤 Payslip exported for: Manuel III Garcia
+2025-03-30 04:16:17 - 📥 Starting to load employee data from Employee Data.csv
+2025-03-30 04:16:17 - ✅ Loaded employee: Manuel III Garcia (10001)
+2025-03-30 04:16:17 - ✅ Loaded employee: Antonio Lim (10002)
+2025-03-30 04:16:17 - ✅ Loaded employee: Bianca Sofia Aquino (10003)
+2025-03-30 04:16:17 - ✅ Loaded employee: Isabella Reyes (10004)
+2025-03-30 04:16:17 - ✅ Loaded employee: Andrea Mae Villanueva (10006)
+2025-03-30 04:16:17 - ✅ Loaded employee: Brad San Jose (10007)
+2025-03-30 04:16:17 - ✅ Loaded employee: Alice Romualdez (10008)
+2025-03-30 04:16:17 - ✅ Loaded employee: Rosie Atienza (10009)
+2025-03-30 04:16:17 - ✅ Loaded employee: Anthony Salcedo (10011)
+2025-03-30 04:16:17 - ✅ Loaded employee: Josie Lopez (10012)
+2025-03-30 04:16:17 - ✅ Loaded employee: Leila Martinez (10014)
+2025-03-30 04:16:17 - ✅ Loaded employee: Fredrick Romualdez (10015)
+2025-03-30 04:16:17 - ✅ Loaded employee: Christian Mata (10016)
+2025-03-30 04:16:17 - ✅ Loaded employee: Selena De Leon (10017)
+2025-03-30 04:16:17 - ✅ Loaded employee: Allison San Jose (10018)
+2025-03-30 04:16:17 - ✅ Loaded employee: Cydney Rosario (10019)
+2025-03-30 04:16:17 - ✅ Loaded employee: Mark Bautista (10020)
+2025-03-30 04:16:17 - ✅ Loaded employee: Darlene Lazaro (10021)
+2025-03-30 04:16:17 - ✅ Loaded employee: Kolby Delos Santos (10022)
+2025-03-30 04:16:17 - ✅ Loaded employee: Vella Santos (10023)
+2025-03-30 04:16:17 - ✅ Loaded employee: Tomas Del Rosario (10024)
+2025-03-30 04:16:17 - ✅ Loaded employee: Jacklyn Tolentino (10025)
+2025-03-30 04:16:17 - ✅ Finished loading 22 employee(s)
+2025-03-30 04:16:17 - 📂 Loading attendance records from: /Users/samleonor/Desktop/com.motorph.payroll/Attendance.csv
+2025-03-30 04:16:17 - ⛔ Error loading attendance file: Unparseable date: "02/09/2022"
+2025-03-30 04:16:19 - 💼 Payroll processed for 22 employee(s) by: Manuel III Garcia
+2025-03-30 04:16:27 - 🚪 Logout | Role: Employee | Name: Manuel III Garcia
+2025-03-30 04:16:57 - 📥 Starting to load employee data from Employee Data.csv
+2025-03-30 04:16:57 - ✅ Loaded employee: Manuel III Garcia (10001)
+2025-03-30 04:16:57 - ✅ Loaded employee: Antonio Lim (10002)
+2025-03-30 04:16:57 - ✅ Loaded employee: Bianca Sofia Aquino (10003)
+2025-03-30 04:16:57 - ✅ Loaded employee: Isabella Reyes (10004)
+2025-03-30 04:16:57 - ✅ Loaded employee: Andrea Mae Villanueva (10006)
+2025-03-30 04:16:57 - ✅ Loaded employee: Brad San Jose (10007)
+2025-03-30 04:16:57 - ✅ Loaded employee: Alice Romualdez (10008)
+2025-03-30 04:16:57 - ✅ Loaded employee: Rosie Atienza (10009)
+2025-03-30 04:16:57 - ✅ Loaded employee: Anthony Salcedo (10011)
+2025-03-30 04:16:57 - ✅ Loaded employee: Josie Lopez (10012)
+2025-03-30 04:16:57 - ✅ Loaded employee: Leila Martinez (10014)
+2025-03-30 04:16:57 - ✅ Loaded employee: Fredrick Romualdez (10015)
+2025-03-30 04:16:57 - ✅ Loaded employee: Christian Mata (10016)
+2025-03-30 04:16:57 - ✅ Loaded employee: Selena De Leon (10017)
+2025-03-30 04:16:57 - ✅ Loaded employee: Allison San Jose (10018)
+2025-03-30 04:16:57 - ✅ Loaded employee: Cydney Rosario (10019)
+2025-03-30 04:16:57 - ✅ Loaded employee: Mark Bautista (10020)
+2025-03-30 04:16:57 - ✅ Loaded employee: Darlene Lazaro (10021)
+2025-03-30 04:16:57 - ✅ Loaded employee: Kolby Delos Santos (10022)
+2025-03-30 04:16:57 - ✅ Loaded employee: Vella Santos (10023)
+2025-03-30 04:16:57 - ✅ Loaded employee: Tomas Del Rosario (10024)
+2025-03-30 04:16:57 - ✅ Loaded employee: Jacklyn Tolentino (10025)
+2025-03-30 04:16:57 - ✅ Finished loading 22 employee(s)
+2025-03-30 04:16:57 - 📂 Loading attendance records from: /Users/samleonor/Desktop/com.motorph.payroll/Attendance.csv
+2025-03-30 04:16:57 - ⛔ Error loading attendance file: Unparseable date: "02/09/2022"
+2025-03-30 04:16:59 - 👀 Payslip viewed by: Manuel III Garcia
+2025-03-30 04:17:03 - 🚪 Logout | Role: Employee | Name: Manuel III Garcia
+2025-03-30 04:18:27 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:18:27 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:18:28 - ✅ Login success | Role: employee | Name: 10013
+2025-03-30 04:18:47 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:18:47 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:18:48 - ✅ Login success | Role: employee | Name: 10011
+2025-03-30 04:18:50 - 👀 Payslip viewed by: Anthony Salcedo
+2025-03-30 04:18:51 - 🧾 Payslip generated for: Anthony Salcedo | ID: 10011 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 04:18:53 - 📥 Starting to load employee data from Employee Data.csv
+2025-03-30 04:18:53 - ✅ Loaded employee: Manuel III Garcia (10001)
+2025-03-30 04:18:53 - ✅ Loaded employee: Antonio Lim (10002)
+2025-03-30 04:18:53 - ✅ Loaded employee: Bianca Sofia Aquino (10003)
+2025-03-30 04:18:53 - ✅ Loaded employee: Isabella Reyes (10004)
+2025-03-30 04:18:53 - ✅ Loaded employee: Andrea Mae Villanueva (10006)
+2025-03-30 04:18:53 - ✅ Loaded employee: Brad San Jose (10007)
+2025-03-30 04:18:53 - ✅ Loaded employee: Alice Romualdez (10008)
+2025-03-30 04:18:53 - ✅ Loaded employee: Rosie Atienza (10009)
+2025-03-30 04:18:53 - ✅ Loaded employee: Anthony Salcedo (10011)
+2025-03-30 04:18:53 - ✅ Loaded employee: Josie Lopez (10012)
+2025-03-30 04:18:53 - ✅ Loaded employee: Leila Martinez (10014)
+2025-03-30 04:18:53 - ✅ Loaded employee: Fredrick Romualdez (10015)
+2025-03-30 04:18:53 - ✅ Loaded employee: Christian Mata (10016)
+2025-03-30 04:18:53 - ✅ Loaded employee: Selena De Leon (10017)
+2025-03-30 04:18:53 - ✅ Loaded employee: Allison San Jose (10018)
+2025-03-30 04:18:53 - ✅ Loaded employee: Cydney Rosario (10019)
+2025-03-30 04:18:53 - ✅ Loaded employee: Mark Bautista (10020)
+2025-03-30 04:18:53 - ✅ Loaded employee: Darlene Lazaro (10021)
+2025-03-30 04:18:53 - ✅ Loaded employee: Kolby Delos Santos (10022)
+2025-03-30 04:18:53 - ✅ Loaded employee: Vella Santos (10023)
+2025-03-30 04:18:53 - ✅ Loaded employee: Tomas Del Rosario (10024)
+2025-03-30 04:18:53 - ✅ Loaded employee: Jacklyn Tolentino (10025)
+2025-03-30 04:18:53 - ✅ Finished loading 22 employee(s)
+2025-03-30 04:18:53 - 📂 Loading attendance records from: /Users/samleonor/Desktop/com.motorph.payroll/Attendance.csv
+2025-03-30 04:18:53 - ⛔ Error loading attendance file: Unparseable date: "02/09/2022"
+2025-03-30 04:18:54 - 💼 Payroll processed for 22 employee(s) by: Anthony Salcedo
+2025-03-30 04:18:59 - 🚪 Logout | Role: Employee | Name: Anthony Salcedo
+2025-03-30 04:19:02 - 🚪 Logout | Role: Employee | Name: Anthony Salcedo
+2025-03-30 04:19:05 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:19:05 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:19:06 - ❌ Login failed for ID: 
+2025-03-30 04:19:15 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:19:15 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:19:15 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 04:19:22 - 📖 System Logs viewed by: Sam Leonor
+2025-03-30 04:19:32 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:19:32 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:19:33 - ❌ Login failed for ID: 
+2025-03-30 04:19:40 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:19:40 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:19:40 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 04:19:45 - 📖 System Logs viewed by: Sam Leonor
+2025-03-30 04:19:55 - 🚪 Logout | Role: IT | Name: Sam Leonor
+2025-03-30 04:19:56 - 🚪 Logout | Role: IT | Name: Sam Leonor
+2025-03-30 04:20:03 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 04:20:03 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 04:20:04 - ✅ Login success | Role: hr | Name: Sam Leonor
+2025-03-30 05:47:30 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 05:49:32 - 📥 Starting to load employee data from Employee Data.csv
+2025-03-30 05:49:32 - ✅ Loaded employee: Manuel III Garcia (10001)
+2025-03-30 05:49:32 - ✅ Loaded employee: Antonio Lim (10002)
+2025-03-30 05:49:32 - ✅ Loaded employee: Bianca Sofia Aquino (10003)
+2025-03-30 05:49:32 - ✅ Loaded employee: Isabella Reyes (10004)
+2025-03-30 05:49:32 - ✅ Loaded employee: Andrea Mae Villanueva (10006)
+2025-03-30 05:49:32 - ✅ Loaded employee: Brad San Jose (10007)
+2025-03-30 05:49:32 - ✅ Loaded employee: Alice Romualdez (10008)
+2025-03-30 05:49:32 - ✅ Loaded employee: Rosie Atienza (10009)
+2025-03-30 05:49:32 - ✅ Loaded employee: Anthony Salcedo (10011)
+2025-03-30 05:49:32 - ✅ Loaded employee: Josie Lopez (10012)
+2025-03-30 05:49:32 - ✅ Loaded employee: Leila Martinez (10014)
+2025-03-30 05:49:32 - ✅ Loaded employee: Fredrick Romualdez (10015)
+2025-03-30 05:49:32 - ✅ Loaded employee: Christian Mata (10016)
+2025-03-30 05:49:32 - ✅ Loaded employee: Selena De Leon (10017)
+2025-03-30 05:49:32 - ✅ Loaded employee: Allison San Jose (10018)
+2025-03-30 05:49:32 - ✅ Loaded employee: Cydney Rosario (10019)
+2025-03-30 05:49:32 - ✅ Loaded employee: Mark Bautista (10020)
+2025-03-30 05:49:32 - ✅ Loaded employee: Darlene Lazaro (10021)
+2025-03-30 05:49:32 - ✅ Loaded employee: Kolby Delos Santos (10022)
+2025-03-30 05:49:32 - ✅ Loaded employee: Vella Santos (10023)
+2025-03-30 05:49:32 - ✅ Loaded employee: Tomas Del Rosario (10024)
+2025-03-30 05:49:32 - ✅ Loaded employee: Jacklyn Tolentino (10025)
+2025-03-30 05:49:32 - ✅ Finished loading 22 employee(s)
+2025-03-30 05:49:44 - 📥 Starting to load employee data from Employee Data.csv
+2025-03-30 05:49:44 - ✅ Loaded employee: Manuel III Garcia (10001)
+2025-03-30 05:49:44 - ✅ Loaded employee: Antonio Lim (10002)
+2025-03-30 05:49:44 - ✅ Loaded employee: Bianca Sofia Aquino (10003)
+2025-03-30 05:49:44 - ✅ Loaded employee: Isabella Reyes (10004)
+2025-03-30 05:49:44 - ✅ Loaded employee: Andrea Mae Villanueva (10006)
+2025-03-30 05:49:44 - ✅ Loaded employee: Brad San Jose (10007)
+2025-03-30 05:49:44 - ✅ Loaded employee: Alice Romualdez (10008)
+2025-03-30 05:49:44 - ✅ Loaded employee: Rosie Atienza (10009)
+2025-03-30 05:49:44 - ✅ Loaded employee: Anthony Salcedo (10011)
+2025-03-30 05:49:44 - ✅ Loaded employee: Josie Lopez (10012)
+2025-03-30 05:49:44 - ✅ Loaded employee: Leila Martinez (10014)
+2025-03-30 05:49:44 - ✅ Loaded employee: Fredrick Romualdez (10015)
+2025-03-30 05:49:44 - ✅ Loaded employee: Christian Mata (10016)
+2025-03-30 05:49:44 - ✅ Loaded employee: Selena De Leon (10017)
+2025-03-30 05:49:44 - ✅ Loaded employee: Allison San Jose (10018)
+2025-03-30 05:49:44 - ✅ Loaded employee: Cydney Rosario (10019)
+2025-03-30 05:49:44 - ✅ Loaded employee: Mark Bautista (10020)
+2025-03-30 05:49:44 - ✅ Loaded employee: Darlene Lazaro (10021)
+2025-03-30 05:49:44 - ✅ Loaded employee: Kolby Delos Santos (10022)
+2025-03-30 05:49:44 - ✅ Loaded employee: Vella Santos (10023)
+2025-03-30 05:49:44 - ✅ Loaded employee: Tomas Del Rosario (10024)
+2025-03-30 05:49:44 - ✅ Loaded employee: Jacklyn Tolentino (10025)
+2025-03-30 05:49:44 - ✅ Finished loading 22 employee(s)
+2025-03-30 05:51:54 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 05:51:54 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 05:51:55 - ❌ Login failed for ID: samit
+2025-03-30 05:52:04 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 05:52:04 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 05:52:05 - ✅ Login success | Role: it | Name: Sam Leonor
+2025-03-30 05:52:10 - 📖 System Logs viewed by: Sam Leonor
+2025-03-30 05:52:13 - 🚪 Logout | Role: IT | Name: Sam Leonor
+2025-03-30 05:52:18 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 05:52:18 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 05:52:19 - ✅ Login success | Role: hr | Name: Sam Leonor
+2025-03-30 05:52:30 - 🚪 Logout | Role: HR | Name: Sam Leonor
+2025-03-30 05:52:39 - 🔐 Credentials loaded from Accounts.csv
+2025-03-30 05:52:39 - 👥 User details loaded from ListOfAdmins.csv
+2025-03-30 05:52:40 - ✅ Login success | Role: employee | Name: 10001
+2025-03-30 05:52:47 - 👀 Payslip viewed by: Manuel III Garcia
+2025-03-30 05:52:49 - 🧾 Payslip generated for: Manuel III Garcia | ID: 10001 | Period: Mar 30, 2025 to Mar 30, 2025
+2025-03-30 05:52:53 - 📥 Starting to load employee data from Employee Data.csv
+2025-03-30 05:52:53 - ✅ Loaded employee: Manuel III Garcia (10001)
+2025-03-30 05:52:53 - ✅ Loaded employee: Antonio Lim (10002)
+2025-03-30 05:52:53 - ✅ Loaded employee: Bianca Sofia Aquino (10003)
+2025-03-30 05:52:53 - ✅ Loaded employee: Isabella Reyes (10004)
+2025-03-30 05:52:53 - ✅ Loaded employee: Andrea Mae Villanueva (10006)
+2025-03-30 05:52:53 - ✅ Loaded employee: Brad San Jose (10007)
+2025-03-30 05:52:53 - ✅ Loaded employee: Alice Romualdez (10008)
+2025-03-30 05:52:53 - ✅ Loaded employee: Rosie Atienza (10009)
+2025-03-30 05:52:53 - ✅ Loaded employee: Anthony Salcedo (10011)
+2025-03-30 05:52:53 - ✅ Loaded employee: Josie Lopez (10012)
+2025-03-30 05:52:53 - ✅ Loaded employee: Leila Martinez (10014)
+2025-03-30 05:52:53 - ✅ Loaded employee: Fredrick Romualdez (10015)
+2025-03-30 05:52:53 - ✅ Loaded employee: Christian Mata (10016)
+2025-03-30 05:52:53 - ✅ Loaded employee: Selena De Leon (10017)
+2025-03-30 05:52:53 - ✅ Loaded employee: Allison San Jose (10018)
+2025-03-30 05:52:53 - ✅ Loaded employee: Cydney Rosario (10019)
+2025-03-30 05:52:53 - ✅ Loaded employee: Mark Bautista (10020)
+2025-03-30 05:52:53 - ✅ Loaded employee: Darlene Lazaro (10021)
+2025-03-30 05:52:53 - ✅ Loaded employee: Kolby Delos Santos (10022)
+2025-03-30 05:52:53 - ✅ Loaded employee: Vella Santos (10023)
+2025-03-30 05:52:53 - ✅ Loaded employee: Tomas Del Rosario (10024)
+2025-03-30 05:52:53 - ✅ Loaded employee: Jacklyn Tolentino (10025)
+2025-03-30 05:52:53 - ✅ Finished loading 22 employee(s)
+2025-03-30 05:52:53 - 📂 Loading attendance records from: /Users/samleonor/Desktop/com.motorph.payroll/Attendance.csv
+2025-03-30 05:52:53 - ⛔ Error loading attendance file: Unparseable date: "02/09/2022"
+2025-03-30 05:52:54 - 💼 Payroll processed for 22 employee(s) by: Manuel III Garcia
+2025-03-30 05:52:58 - 🚪 Logout | Role: Employee | Name: Manuel III Garcia
+2025-03-30 05:53:00 - 🚪 Logout | Role: Employee | Name: Manuel III Garcia

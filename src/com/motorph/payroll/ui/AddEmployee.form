@@ -23,8 +23,8 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="161" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabelEmpNum" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabelBirthday" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -41,11 +41,11 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="empnumtf" pref="102" max="32767" attributes="0"/>
+                                  <Component id="empnumtf" max="32767" attributes="0"/>
                                   <Component id="lntf" alignment="0" max="32767" attributes="0"/>
                                   <Component id="fntf" alignment="0" max="32767" attributes="0"/>
                                   <Component id="bdtf" alignment="0" max="32767" attributes="0"/>
@@ -53,7 +53,7 @@
                                   <Component id="pntf" alignment="0" max="32767" attributes="0"/>
                                   <Component id="ssstf" alignment="0" max="32767" attributes="0"/>
                                   <Component id="phtf" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="tintf" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="tintf" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -78,7 +78,7 @@
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="stf" alignment="0" pref="102" max="32767" attributes="0"/>
+                          <Component id="stf" alignment="0" max="32767" attributes="0"/>
                           <Component id="ptf" alignment="0" max="32767" attributes="0"/>
                           <Component id="istf" alignment="0" max="32767" attributes="0"/>
                           <Component id="bstf" alignment="0" max="32767" attributes="0"/>
@@ -86,19 +86,21 @@
                           <Component id="patf" alignment="0" max="32767" attributes="0"/>
                           <Component id="catf" alignment="0" max="32767" attributes="0"/>
                           <Component id="smtf" alignment="0" max="32767" attributes="0"/>
-                          <Component id="hrtf" alignment="0" max="32767" attributes="0"/>
+                          <Component id="hrtf" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="pitf" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="136" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
           </Group>
+          <Component id="panel1" alignment="1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Component id="panel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -107,7 +109,10 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lntf" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lntf" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelPosition" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="jLabelLastName" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
@@ -153,41 +158,36 @@
                           <Component id="jLabelStatus" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="ptf" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="istf" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSupervisor" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="bstf" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelBasicSalary" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="rstf" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelRiceSubsidy" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="patf" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelPhoneAllowance" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="catf" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelClothingAllowance" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="smtf" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSemiMonthlyRate" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="jLabelPosition" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="ptf" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="istf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSupervisor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="bstf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelBasicSalary" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="rstf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelRiceSubsidy" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="patf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelPhoneAllowance" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="catf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelClothingAllowance" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="smtf" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSemiMonthlyRate" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -206,7 +206,7 @@
                   <Component id="addbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="backbtn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="140" max="32767" attributes="0"/>
+              <EmptySpace pref="133" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -361,5 +361,25 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbtnActionPerformed"/>
       </Events>
     </Component>
+    <Container class="java.awt.Panel" name="panel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="33" red="0" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="33" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
   </SubComponents>
 </Form>

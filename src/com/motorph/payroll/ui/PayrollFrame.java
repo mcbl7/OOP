@@ -18,6 +18,7 @@ public class PayrollFrame extends javax.swing.JFrame {
 
  
     public PayrollFrame() {
+        setSize(800, 600);
         initComponents();
     }
     
@@ -56,12 +57,13 @@ public class PayrollFrame extends javax.swing.JFrame {
         salaryField = new javax.swing.JTextField();
         overtimeField = new javax.swing.JTextField();
         hourlyRateField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         grossPayLabel = new javax.swing.JLabel();
         salaryLabel = new javax.swing.JLabel();
         deductionsAmountLabel = new javax.swing.JLabel();
         overtimeLabel = new javax.swing.JLabel();
         netPayAmountLabel = new javax.swing.JLabel();
+        panel1 = new java.awt.Panel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,14 +77,6 @@ public class PayrollFrame extends javax.swing.JFrame {
 
         calculateButton.setText("Calculate Payroll");
 
-        salaryField.setText("jTextField1");
-
-        overtimeField.setText("jTextField2");
-
-        hourlyRateField.setText("jTextField3");
-
-        jLabel1.setText("Payroll Calculator");
-
         grossPayLabel.setText("jLabel2");
 
         salaryLabel.setText("Basic Salary:");
@@ -93,18 +87,38 @@ public class PayrollFrame extends javax.swing.JFrame {
 
         netPayAmountLabel.setText("jLabel4");
 
+        panel1.setBackground(new java.awt.Color(0, 51, 153));
+
+        jLabel1.setFont(new java.awt.Font("Charter", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Payroll Calculator");
+
+        javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
+        panel1.setLayout(panel1Layout);
+        panel1Layout.setHorizontalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel1Layout.setVerticalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(214, 214, 214))
+            .addComponent(panel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
+                .addGap(275, 275, 275)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(152, 152, 152)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(netPayLabel)
                             .addComponent(deductionsLabel)
@@ -114,24 +128,23 @@ public class PayrollFrame extends javax.swing.JFrame {
                             .addComponent(salaryLabel))
                         .addGap(51, 51, 51)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(salaryField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(overtimeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(hourlyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(salaryField)
+                                .addComponent(overtimeField)
+                                .addComponent(hourlyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(grossPayLabel)
                             .addComponent(deductionsAmountLabel)
                             .addComponent(netPayAmountLabel)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(207, 207, 207)
+                        .addGap(66, 66, 66)
                         .addComponent(calculateButton)))
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addContainerGap(277, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addGap(30, 30, 30)
+                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(121, 121, 121)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(salaryLabel)
                     .addComponent(salaryField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -143,9 +156,9 @@ public class PayrollFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hourlyRateLabel)
                     .addComponent(hourlyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                .addGap(36, 36, 36)
                 .addComponent(calculateButton)
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(grossLabel)
                     .addComponent(grossPayLabel))
@@ -157,7 +170,7 @@ public class PayrollFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(netPayLabel)
                     .addComponent(netPayAmountLabel))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
 
         pack();
@@ -180,6 +193,7 @@ public class PayrollFrame extends javax.swing.JFrame {
     private javax.swing.JLabel netPayLabel;
     private javax.swing.JTextField overtimeField;
     private javax.swing.JLabel overtimeLabel;
+    private java.awt.Panel panel1;
     private javax.swing.JTextField salaryField;
     private javax.swing.JLabel salaryLabel;
     // End of variables declaration//GEN-END:variables
